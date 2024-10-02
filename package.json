@@ -1,0 +1,13 @@
+{
+    "name": "my-express-react-project",
+    "version": "1.0.0",
+    "scripts": {
+      "start-backend": "cd backend && npm start",
+      "start-frontend": "cd frontend && npm start",
+      "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+      "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+    },
+    "devDependencies": {
+      "concurrently": "^6.2.0"
+    }
+  }
